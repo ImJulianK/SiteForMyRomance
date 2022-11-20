@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lyvia S2</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onLoad="setup();">
+    <header id="heading" class="cabecalho cabecalho--fixo">
+        <div class="texto corFundo">
+            <span>
+                Um belo site feito com muito carinho para minha linda namorada. By Juliano ^^
+            </span>
+        </div>
+        <nav class="container1 corFundo">
+            <div class="linha1">
+                <ul class="">
+                    <li class="nav-item"><a id="menu1" onclick="Esconde1()">Fotos</a></li>
+                    <li class="nav-item"><a id="menu2" onclick="Esconde2()">Mensagens</a></li>
+                    <li class="nav-item"><a id="menu3" onclick="Esconde3()">Extra</a></li>
+                </ul>
+            </div>
+            <div class="linha2">
+                <a class="sair" href="Login/index.html" target="_self">
+                    Sair
+                </a>
+            </div>
+        </nav>
+        <div class="musica">
+            <a class="nome-musica" id="nomeMusica" href="https://open.spotify.com/playlist/23kEEfNGpfHKVBJ9aFMLTX?si=RuJ5FyZHSgq7bmlNAGUPVg&utm_source=copy-link" target="_blank">
+                Clique para acessar a playlist
+            </a>
+            <audio preload="none" class="audio-controler my_audio" id="audio" controls>
+                <source src="assets/audio/musica1.mp3" type="audio/mpeg" id="sound_src" />
+            </audio>
+        </div>
+    </header>
+
+    <div class="fundo">
+        <div class="espaco"></div>
+        <!--image slider start-->
+        <div class="juju" id="fotos">
+            <div class="slider">
+                <div class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <input type="radio" name="radio-btn" id="radio7">
+                    <input type="radio" name="radio-btn" id="radio8">
+                    <input type="radio" name="radio-btn" id="radio9">
+                    <input type="radio" name="radio-btn" id="radio10">
+                    <!--radio buttons end-->
+                    <!--slide images start-->
+                    <div class="slide first">
+                        <img src="assets/img/imagemCarrossel1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/imagemCarrossel2.png"" alt="">
+                    </div>
+                    <div class=" slide">
+                        <img src="assets/img/imagemCarrossel3.png"" alt="">
+                    </div>
+                    <div class=" slide">
+                        <img src="assets/img/imagemCarrossel4.png"" alt="">
+                    </div>
+                    <div class=" slide">
+                        <img src="assets/img/imagemCarrossel5.png"" alt="">
+                    </div>
+                    <div class=" slide">
+                        <img src="assets/img/imagemCarrossel6.png"" alt="">
+                    </div>
+                    <div class=" slide">
+                        <img src="assets/img/imagemCarrossel7.png"" alt="">
+                    </div>
+                    <div class=" slide">
+                        <img src="assets/img/imagemCarrossel8.png"" alt="">
+                    </div>
+                    <div class=" slide">
+                        <img src="assets/img/imagemCarrossel9.png"" alt="">
+                    </div>
+                    <div class=" slide">
+                        <img src="assets/img/imagemCarrossel10.png"" alt="">
+                    </div>
+
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class=" navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                        <div class="auto-btn7"></div>
+                        <div class="auto-btn8"></div>
+                        <div class="auto-btn9"></div>
+                        <div class="auto-btn10"></div>
+                    </div>
+                    <!--automatic navigation end-->
+                </div>
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                    <label for="radio7" class="manual-btn"></label>
+                    <label for="radio8" class="manual-btn"></label>
+                    <label for="radio9" class="manual-btn"></label>
+                    <label for="radio10" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+            </div>
+            <!--image slider end-->
+        </div>
+        <div class="txts">
+        <div class="containers textinho" id="msgParabens">
+            <h2>Parabéns pelo seu dia! (2022)</h2>
+            <div class="paragrafos">
+                <p>Hoje é um dia muito especial! Uma pessoa muito importante para mim (desenvolvedor desse site) está
+                    fazendo
+                    aniversário.
+                    O que eu desejo para você é o que eu desejo todos os dias para ti: muita felicidade, saúde e
+                    sucesso.
+                    Você é uma mulher incrível e merece o mundo todo. Que tu nunca deixe de ser essa pessoa perfeita
+                    que é.
+                </p>
+                <p>Hoje você completa mais um ano de vida e quem ganha o presente sou eu.
+                    Ter ao meu lado alguém tão especial como você faz de mim o homem mais feliz do mundo.
+                    Tenho muito a agradecer de ter você na minha vida. Prometo que estarei ao seu lado sempre que
+                    precisar e te darei o meu amor para sempre.
+                </p>
+                <p>No dia em que te conheci, eu sabia que havia algo diferente entre nós.
+                    Hoje é o dia de comemorar a sua vida, de celebrar essa pessoa maravilhosa que você é e que me faz
+                    feliz a cada dia.
+                    Hoje é também um dia de agradecer por você ser exatamente quem é e por ter um significado tão
+                    especial em minha vida.
+                </p>
+            </div>
+        </div>
+        <div class="containers textinho" id="oqSignifica">
+            <h2>O que significa para mim</h2>
+            <div class="paragrafos">
+                <p>Olha, a gente se conhece faz pouquissímo tempo, mas sinto que nossa conexão é muito forte.
+                    Você é o motivo de querer acordar todos os dias.
+                    Ly, quando te abraço me sinto acolhido, me sinto seguro e tenho certeza de que quero te levar para o
+                    resto da minha vida.
+                    Todos os momentos que passei contigo são extremamente especiais para mim.
+                </p>
+                <p>É sempre bom ter alguém para te fazer companhia, para te ouvir e te acolher.
+                    No meu caso eu tive o dobro de sorte porque essa pessoa faz isso muito bem.
+                    Bom, acho que encontrei meu tchan hein... <br><br>
+                    Por isso, tenho muito a te agradecer:
+                </p>
+                <p>Obrigado por estar aqui presente. Obrigado por todo apoio que você me deu e por ser tão fofa comigo.
+                    Obrigado por todos os abraços apertados e todo carinho. Obrigado por me fazer uma pessoa mais feliz
+                    e realizada.
+                    Obrigado por ser tão incrivel ao ponto de eu contar as horas para te ver.
+                    Enfim, obrigado por tudo. S2
+                </p>
+            </div>
+        </div>
+        <div class="containers textinho" id="melhoresMomentos">
+            <h2>Momentos</h2>
+            <div class="paragrafos">
+                <p>Primeiramente, eu iria colocar o nome dessa seção como "Melhores Momentos", mas percebi que quase
+                    todo o momento que passo contigo é um bom momento.
+                    (mds isso foi bem gay kkkkk) Toda vez que penso em ti lembro de cada momento que vou citar aqui. ^^
+                </p>
+                <p>Lembra a primeira vez que a gente saiu? Não imaginava que teria essa conexão forte que a gente
+                    tem.<br>
+                    Outra coisa que me marcou foi quando a gente ficava na escola até tarde (e as vezes tomava pito
+                    kk).<br>
+                    Teve o dia que a gente saiu nas férias e o Matheus com a Lindsey quiseram registrar que estavam de
+                    vela (e a Mari fotografou).
+                </p>
+                <p>Também me recordo de pequenos detalhes de quando estou contigo, como você que ficava "brincando" com
+                    a minha mão (kkkkkkkk) e quando meu
+                    brinco enroscava no seu cabelo. São tantas memórias boas que tenho que acho que nem teria mais
+                    espaço para anotar (deixa para nossa listinha).
+                </p>
+            </div>
+        </div>
+        <div class="containers textinho" id="umAnoJuntos">
+            <h2>Um ano juntos</h2>
+            <div class="paragrafos">
+                <p>No dia 23 de novembro de 2021, tive a chance de conhecer pessoalmente a pessoa mais especial para mim.
+                    Na época não sabia que teriamos essa ligação incrivel que temos, mas hoje estamos ai, juntos, um ano depois kkkkkk.
+                    Hoje em dia nossa ligação é tão forte que sinceramente, não sei o que sou sem você. A gente faz tudo juntos, desde companhia
+                    até coisas aleatórias do dia. Realmente encontrei o meu tchan. Rs
+                </p>
+                <p>Ainda me lembro da primeira vez que disse que te amava. Queria que fosse nas entrelinhas, mas você ja me questionou logo de cara: "Então 
+                    você me ama???" kkkkkkkkkkk. Sinceramente, o tempo realmente voa quando estamos com quem a gente ama, então te garanto que, um ano depois 
+                    do nosso primeiro date, te amo e muito.<br><br>
+                    Te amo coisinha rs.
+                </p>
+                <p>De lá para cá mudamos tanto... Percebi que evolui muito como pessoa estando ao seu lado. Hoje sou mais maduro e responsável. Obrigado por tudo
+                    que passamos e por tudo que vamos passar ainda kkkkk.<br>
+                    Aproveitando esse momento de agradecimento, quero agradecer pelo 1 ano com minha amada e que venham mais anos no futuro. 
+                    <br><br>
+                    Te amo muuuuuuiiiiitooooo S2
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="extra">
+            <h2>Aqui temos coisinhas extras que andei fazendo para ti S2</h2>
+            <p class="textoExtra">Você conquistou meu coração, sabia? <br/>Bom, agora posso te mostrar visualmente que ele pertence apenas a você.</p>
+            <a href="Coracao/index.html" class="links">❤️</a>
+            <br/>
+            <p class="textoExtra">O nosso amor vai até o Infinito! <br/>Não acredita? Pois tenho certeza que vai sim.</p>
+            <a href="HeartPage/index.html" class="links">♾</a>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h3>Obrigado por acessar :D</h3>
+            <div class="pessoas">
+                <div class="ly">
+                    <h4>Lyvia S2 (a aniversariante)</h4>
+                    <p>Contato: <br>
+                        <a href="https://instagram.com/lyvia.machado?utm_medium=copy_link" target="_blank">@lyvia.machado</a>
+                    </p>
+                </div>
+                <div class="ju">
+                    <h4>Juliano (o dev)</h4>
+                    <p>Contato: <br>
+                        <a href="https://instagram.com/julianuh.aleixo?utm_medium=copy_link" target="_blank">@julianuh.aleixo</a>
+                    </p>
+                </div>
+            </div>
+            <div class="fim">
+                <p>Esse site foi planejado no dia 12 de janeiro de 2022. Foram investidas quase 100 horas de
+                    programação,
+                    pesquisas e muita inspiração para poder te dar esse simples presente. Espero que tenha gostado. 
+                    Editado pela segunda vez para comemorar um ano que nos conhecemos (23/11/2022) Rs
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
